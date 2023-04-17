@@ -1,0 +1,32 @@
+
+// px -> rem
+@function calc_rem($size) {
+	$remSize: $size / 16px;
+	@return #{$remSize}rem;
+}
+
+// px -> em
+@function calc_em($size) {
+	$remSize: $size / 16px;
+	@return #{$remSize}em;
+}
+
+// shadows
+// @function shadows($max: 5, $color: red, $top: b){
+//   $out: null;
+//   $shadow: null;
+//   $step: round(90/$max) * 1%;
+//   $step: $step - 1;
+//   @for $i from 1 to $max {
+//     $pos: #{$i}px;
+//     $pos-n: -$pos;
+//     @if $top == t {
+//       $shadow: $pos $pos-n 0 lighten($color, $step);
+//     } @else {
+//       $shadow: $pos $pos 0 lighten($color, $step);
+//     }
+//     $out: append( $out, $shadow, comma );
+//     $step: $step+$step;
+//   }
+//   @return $out;
+// }

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru" class="ftb">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>grid css</title>
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="row flex jcsb aic">
+    <a href="/" class="logo">grid</a>
+    <a href="javascript:void(0);" onclick="popup_open('main_menu');">open popup</a>
+  </div>
+</header>
+
+<section>
+  <div class="row pt30">
+
+    <!-- data-sw  - привязка data-sw="number" =  data-swb="number"-->
+    <div >
+      <a href="javascript:void(0);" data-sw="1" class="switch active">switch 1</a>
+      <a href="javascript:void(0);" data-sw="1" class="switch">switch 2</a>
+      <a href="javascript:void(0);" data-sw="1" class="switch">switch 3</a>
+    </div>
+
+    <!-- data-swb  - индикатор   переключателя -->
+    <div class="pt20">
+      <div data-swb="1">
+        <h2>content 1</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, repellendus.
+        </p>
+      </div>
+      <div data-swb="1">
+        <h2>content 2</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div data-swb="1">
+        <h2>content 3</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quidem magnam explicabo itaque, iste illo fugit neque sit ducimus sunt.</p>
+      </div>
+    </div>
+
+    <hr>
+    <div>
+      <input type="checkbox" class="checkbox" id="check01">
+      <label for="check01">checkbox</label>
+    </div>
+
+    <div>
+      <input type="radio" class="radio" id="radio01" name="radios01">
+      <label for="radio01">radio01</label>
+    </div>
+    <div>
+      <input type="radio" class="radio" id="radio02" name="radios01">
+      <label for="radio02">radio02</label>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="row">footer</div>
+</footer>
+
+<div>
+  <a href="javascript:void(0);" class="bgpopup " id="main_menu" onclick="popup_close('main_menu');"></a>
+  <div class="popup ">
+      <p class="">Заголовок</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, culpa?</p>
+  </div>
+</div>
+
+<script src="/js/jquery-2.2.1.min.js"></script>
+<script src="/js/script.js"></script>
+
+</body>
+</html>
